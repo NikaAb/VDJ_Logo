@@ -47,6 +47,16 @@ $python biologo.py --logotype [-p|-m|-s|-mv|-mg] --alignments [-f|-a|-t] filenam
 If you want to generate the logo for a segment of the alignment (for instance the CDR3 or the V gene, etc) you can use the position information in the CloneName_region.txt file and run the command with the corresponding -start and -length option.
 
 To run the test, please use the folowing command :
+
 ```
 $python biologo.py  --logotype -s --alignments -t Dataset/test2.txt   --germline -t  Dataset/test1.txt --output -p FL --settings -seqtype p -start 1 -length -1 -blocksize 200
 ```
+
+or
+
+
+```
+$python biologo.py  --logotype -s --alignments -t Dataset/test2.txt   --germline -t  Dataset/test1.txt --output -p FL --settings -seqtype p -start 1 -length -1 -blocksize 200
+```
+
+
