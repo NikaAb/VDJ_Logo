@@ -16,8 +16,14 @@ $python alignment_seq.py -a AIRR.tsv -n CloneName
 Where AIRR.tsv is the annotated BCR/TCR sequences in AIRR format, and CloneName is the output name that will be used to generate 6 files, 3 of which will be used for the next step. These files are the following.
 
 CloneName_germline.fasta : the naive sequence used as the refrence 
+
+
 CloneName_selected_seq_uniq.aln.fa : the alignment of BCR/TCR sequences
+
+
 CloneName_region.txt : contning the beginging and end posion of different regions (V, J, cdr1, cdr2, cdr3, D) of each sequence.
+
+
 
 
 The other three files can be deleted at the end of this step.
