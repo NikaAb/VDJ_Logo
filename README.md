@@ -54,9 +54,10 @@ $python biologo.py  --logotype -s --alignments -t Dataset/test2.txt   --germline
 
 or
 
+```
+$python biologo.py  --logotype -s --alignments -f Dataset/test_selected_seq_uniq.aln.fa   --germline -f  Dataset/test_germline.fasta --output -p FL --settings -seqtype p -start 1 -length -1 -blocksize 200
+```
 
-```
-$python biologo.py  --logotype -s --alignments -t Dataset/test2.txt   --germline -t  Dataset/test1.txt --output -p FL --settings -seqtype p -start 1 -length -1 -blocksize 200
-```
+
 
 
