@@ -38,7 +38,7 @@ $python biologo.py --logotype [-p|-m|-s|-mv|-mg] --alignments [-f|-a|-t] filenam
 
 --alignments takes the CloneName_selected_seq_uniq.aln.fa file and --germline takes CloneName_germline.fasta, for more details please check the biologo.py file. 
 
-To be asked from Juliana or Lucile: how do we use the CloneName_region.txt file in the current version of VDJ_Logo? 
+If you want to generate the logo for a segment of the alignment (for instance the CDR3 or the V gene, etc) you can use the position information in the CloneName_region.txt file and run the command with the corresponding -start and -length option.
 
 To run the test, please use the folowing command :
 ```
