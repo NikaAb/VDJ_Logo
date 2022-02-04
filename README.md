@@ -39,25 +39,19 @@ $python alignment_seq.py -a Input/sc1_BORJ_clone2_100_biologo.tsv -n test
 - biologo.py
 
 ```
-$python biologo.py --logotype [-p|-m|-s|-mv|-mg] --alignments [-f|-a|-t] filename --germline [-f|-a|-t] filename --output [-e|-s|-p] filename --settings -seqtype p -start 1 -length -1 -blocksize 200
+python biologo.py  --logotype -m --alignments -f {FLASK2_PATH}/{cloneName}_sequences.fasta   --germline -f {FLASK2_PATH}/{cloneName}_germline.fasta --output -p {output} --settings -seqtype p -start 1 -length -1 -blocksize 200
 ```
 
---alignments takes the **CloneName_selected_seq_uniq.aln.fa** file and --germline takes **CloneName_germline.fasta**, for more details please check the biologo.py file. 
+--alignments takes the **{cloneName}_sequences.fasta** file and --germline takes **CloneName_germline.fasta**, for more details please check the biologo.py file. 
 
 If you want to generate the logo for a segment of the alignment (for instance the CDR3 or the V gene, etc) you can use the position information in the CloneName_region.txt file and run the command with the corresponding -start and -length option.
 
 To run the test, please use the folowing command :
 
 ```
-$python biologo.py  --logotype -s --alignments -t Dataset/test2.txt   --germline -t  Dataset/test1.txt --output -p FL --settings -seqtype p -start 1 -length -1 -blocksize 200
-```
 
-or
+python biologo.py  --logotype -m --alignments -f Dataset/test_sequences.fasta   --germline -f Dataset/test_germline.fastaa --output -p {output} --settings -seqtype p -start 1 -length -1 -blocksize 200
 
 ```
-$python biologo.py  --logotype -s --alignments -f Dataset/test_selected_seq_uniq.aln.fa   --germline -f  Dataset/test_germline.fasta --output -p FL --settings -seqtype p -start 1 -length -1 -blocksize 200
-```
-
-
 
 
